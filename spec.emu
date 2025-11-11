@@ -39,9 +39,7 @@ contributors: Jordan Harband, Mark Miller
           <emu-alg>
             1. Let _E_ be the *this* value.
             1. If _E_ is not an Object, throw a *TypeError* exception.
-            1. Let _numberOfArgs_ be the number of arguments passed to this function call.
-            1. If _numberOfArgs_ is 0, throw a *TypeError* exception.
-            1. Perform ? SetterThatIgnoresPrototypeProperties(*this* value, %Error.prototype%, *"stack"*, _v_).
+            1. If _v_ is present, perform ? SetterThatIgnoresPrototypeProperties(*this* value, %Error.prototype%, *"stack"*, _v_).
             1. Return *undefined*.
           </emu-alg>
         </emu-clause>
