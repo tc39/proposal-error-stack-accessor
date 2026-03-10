@@ -46,5 +46,28 @@ contributors: Jordan Harband, Mark Miller
         </emu-clause>
       </emu-clause>
     </emu-clause>
+
+    <emu-clause id="sec-properties-of-error-instances" number="4">
+      <h1>Properties of Error Instances</h1>
+      <p>Error instances are ordinary objects that inherit properties from the Error prototype object and have an [[ErrorData]] internal slot whose value is *undefined*. <del>The only specified use of [[ErrorData]] is by `Object.prototype.toString` (<emu-xref href="#sec-object.prototype.tostring"></emu-xref>) and `Error.isError` (<emu-xref href="#sec-error.iserror"></emu-xref>) to identify Error, AggregateError, or _NativeError_ instances.</del><ins>Specified uses of [[ErrorData]] include to identify <emu-xref href="#sec-error-constructor">Error</emu-xref>, <emu-xref href="#sec-aggregate-error-constructor">AggregateError</emu-xref>, and _NativeError_ instances as Error objects within `Object.prototype.toString` and `Error.isError`; as well as for the <emu-xref href="#sec-get-error.prototype-stack">Error.prototype.stack accessor</emu-xref>.</ins></p>
+    </emu-clause>
+
+    <emu-clause id="sec-nativeerror-object-structure" number="6">
+      <h1>_NativeError_ Object Structure</h1>
+
+      <emu-clause id="sec-properties-of-nativeerror-instances" number="4">
+          <h1>Properties of _NativeError_ Instances</h1>
+          <p>_NativeError_ instances are ordinary objects that inherit properties from their _NativeError_ prototype object and have an [[ErrorData]] internal slot whose value is *undefined*. <del>The only specified use of [[ErrorData]] is by `Object.prototype.toString` (<emu-xref href="#sec-object.prototype.tostring"></emu-xref>) and `Error.isError` (<emu-xref href="#sec-error.iserror"></emu-xref>) to identify Error, AggregateError, or _NativeError_ instances.</del><ins>Specified uses of [[ErrorData]] include to identify <emu-xref href="#sec-error-constructor">Error</emu-xref>, <emu-xref href="#sec-aggregate-error-constructor">AggregateError</emu-xref>, and _NativeError_ instances as Error objects within `Object.prototype.toString` and `Error.isError`; as well as for the <emu-xref href="#sec-get-error.prototype-stack">Error.prototype.stack accessor</emu-xref>.</ins></p>
+      </emu-clause>
+    </emu-clause>
+
+    <emu-clause id="sec-aggregate-error-objects" number="7">
+      <h1>AggregateError Objects</h1>
+
+      <emu-clause id="sec-properties-of-aggregate-error-instances" number="4">
+        <h1>Properties of AggregateError Instances</h1>
+        <p>AggregateError instances are ordinary objects that inherit properties from their AggregateError prototype object and have an [[ErrorData]] internal slot whose value is *undefined*. <del>The only specified use of [[ErrorData]] is by `Object.prototype.toString` (<emu-xref href="#sec-object.prototype.tostring"></emu-xref>) and `Error.isError` (<emu-xref href="#sec-error.iserror"></emu-xref>) to identify Error, AggregateError, or _NativeError_ instances.</del><ins>Specified uses of [[ErrorData]] include to identify <emu-xref href="#sec-error-constructor">Error</emu-xref>, <emu-xref href="#sec-aggregate-error-constructor">AggregateError</emu-xref>, and _NativeError_ instances as Error objects within `Object.prototype.toString` and `Error.isError`; as well as for the <emu-xref href="#sec-get-error.prototype-stack">Error.prototype.stack accessor</emu-xref>.</ins></p>
+      </emu-clause>
+    </emu-clause>
   </emu-clause>
 </emu-clause>
