@@ -10,7 +10,7 @@ Champions:
  - [@ljharb](https://github.com/ljharb)
  - [@erights](https://github.com/erights)
 
-This proposal is currently [stage 2](https://github.com/tc39/proposals) of the [process](https://tc39.github.io/process-document/).
+This proposal is currently [stage 3](https://github.com/tc39/proposals) of the [process](https://tc39.github.io/process-document/).
 
 ## Rationale
 
